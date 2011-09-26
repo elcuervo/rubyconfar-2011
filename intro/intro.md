@@ -1,4 +1,6 @@
 !SLIDE center
+<!-- Intro proposito de la charla + mencion de tecnologias a mostrar
+mas adelanteo -->
 
 # Data scientist using Ruby
 
