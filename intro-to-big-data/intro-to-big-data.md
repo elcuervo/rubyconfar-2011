@@ -9,13 +9,19 @@ Big Data
 
 !SLIDE
 
+#Ejemplos de sources que buscamos
+
 *Logs
+*Datos no-normalizados
 
 !SLIDE
 
-Correlaciones
+*Conteos
+*Correlaciones
 
 !SLIDE
+
+#Fire and forget
 
 Batch processing
 

@@ -53,8 +53,24 @@ Hadoop ME GUSTA definirlo como su engine y su filesystem HDFS. Si bien
 el Map reduce corre sobre el filesystem HDFS en la mayoria de los
 casos , y casi siempre toman como unidad , a mi me gusta separarlos.
 
-Quiero hacer un poco de velocidad y explicar que es Big Data
+Quiero hacer un poco de velocidad (change of gears, creo que ya me
+estoy olvidando de como hablar en espanol)y explicar que es Big Data.
+
+Que es big data ?
+Bueno big data es un cachphrase una palabra clave para denominar la
+parte de computacion de alta performance que se encarga de procesar
+sets de datos gigantes que no se podrian procesar eficientemente por
+ejemplo en una maquina.
+
+Quien usa big data : muchas de las empresas grandes usan big data para
+todo en su core. Facebook por ejemplo lo empezo usando en sus sistemas
+de notificaciones a ver a quien le avisaba cuando alguien subia una
+foto o subia un comentario. Tambien hacia un algoritmo para ver que
+usuarios estan mas cerca y caundo digo mass cerca digo que usuarios
+tiene mas afinidad o cosas en comun conmigo y mostrarme el feed de
+esos usuarios solamente.
+
+Un 
 
 
-
-Podes hacer queries sobre data no normalizadame
+Podes hacer queries sobre data no normalizadam
