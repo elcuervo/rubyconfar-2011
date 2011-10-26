@@ -1,3 +1,17 @@
 !SLIDE
-<!-- cascading , implementacion de algoritmos con cascalog + hadoop,
-implementacion algoritmos con storm -->
+
+#Clojure
+
+!SLIDE
+
+#Cascalog
+
+*Make queries
+
+!SLIDE
+
+#Machine learning con Cascalog
+
+!SLIDE
+
+Gradient descent
