@@ -7,5 +7,7 @@
 {"section":"ruby-machine-learning"},
 {"section":"clojure-machine-learning"},
 {"section":"comparison"},
-{"section":"conclusions"}
+{"section":"conclusions"},
+
+{"section":"map-reduce"}
 ]
