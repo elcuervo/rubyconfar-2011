@@ -1,0 +1,1 @@
+Podes hacer queries sobre data no normalizada

@@ -1,4 +1,52 @@
 !SLIDE
-<!-- What's big data, what are people doing with big data, more
-features apache hadoop (throughput) + anatomy (namenode, tasknode),
-zookeeper etc, Storm, batched + real time -->
+
+What is big data ?
+
+!SLIDE
+
+Who is doing big data ?
+
+!SLIDE
+
+Logs
+
+!SLIDE
+
+Correlaciones
+
+!SLIDE
+
+Batch processing
+
+!SLIDE
+
+Enter HADOOP
+
+!SLIDE
+
+* Map
+* Reduce
+
+!SLIDE
+
+* Map
+* Shuffle
+* Reduce
+
+!SLIDE
+
+* Map
+* Fetch
+* Copy
+* Merge
+* Reduce
+
+!SLIDE
+
+* Gracias a Hadoop solo tenes que hacer el
+Mapper y Reduce
+
+* Fair Scheduler
+
+!SLIDE
+
