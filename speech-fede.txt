@@ -1,1 +1,60 @@
-Podes hacer queries sobre data no normalizada
+Basicamente un DS se encarga o mejor dicho tiene que saber como
+solucionar TODAS o PARTE de estas. 
+Yo digo que es una disciplina que encompansa todas esas cosas. Hay una
+charla John Rausser de Amazon que muestra como se puede llegar a ser
+Data scientist tanto de la matematica como de la ingenieria. Yo creo
+que la mayoria aca tenemos un background de ingenieria, pero de
+cualquier manera si no es asi... me gustaria charlar con gente que
+viene de las ciencias y que esta interesada en hacer este tipo de
+trabjo.
+
+Quiero explicar estas CUATRO categorias que tenemos ahi : BD trata de
+saber que tecnologias y herramientas hay para el procesamiento de big
+data y como usarlas
+Mining data o Scrapping es otra parte importante generar data de donde
+oodamos sacar conclusiones
+Data analytics es formular hipotesis y luego tratar de generar modelos
+matematicos que prueban estas hipotesis
+Finalmente una parte importante y que es sub estimada es que un Data
+scientist necesita tener cierta infrastructura para poder realizar su
+trabajo de inteligencia y debe estimar y saber cual es el estrcutura
+correcta , como disenarla y como crear dicha estructura.
+
+Para poder venir a decirles que tiene que pasarse a trabajos de Data
+scientist tenemos este par de qoutes que como ven son la posta xq uno
+es el chief economista en google. no es cualquiera es el chief.
+
+Y el segundo lo lei una vez y dsp no pude encontrar el qoute asique lo
+reproduje lo mejor que me acordaba
+
+Asique vamos como por el slice 10 y voy a explicar el proposito de
+esta charla , que es basicamente xq la profesion del futuro tiene que
+ver con entender datos y divertirnos con las ultimas tecnologias
+
+Quiero empezar a hablar de Big data y cuando hablo de big data,
+recuerden que era UNO de los temas sobre los cuales queria habar habia
+mas..
+
+Bueno cuando hablo de Big data hablo de tecnologias para batch
+processing como Hadoop,
+tecnologias como Actos y sus Agents para comunicacion; organizacion de procesos
+Message queues *bueno los agenets son como message queues
+Y quiero terminar hablando de una tecnologia que le estoy dando
+bastante bola ultimamente que es para hacer real time systems
+tencologias 
+refiero a tecnogias como Storm.
+
+Quiero empezar hablando de la vedette de todo esto que es Hadoop.
+
+Hadoop y sus experiencias con Hadoop las va a contar mas adelante
+Bruno Aguirre pero bueno queria comentarles algo de teoria basica para
+ver donde estamos parados
+Hadoop ME GUSTA definirlo como su engine y su filesystem HDFS. Si bien
+el Map reduce corre sobre el filesystem HDFS en la mayoria de los
+casos , y casi siempre toman como unidad , a mi me gusta separarlos.
+
+Quiero hacer un poco de velocidad y explicar que es Big Data
+
+
+
+Podes hacer queries sobre data no normalizadame

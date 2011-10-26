@@ -12,9 +12,24 @@ Bruno Aguirre  (@elcuervocorax)
 # What's a Data Scientist?
 
 *Big Data
-*Scrapping
+*Mining Data
 *Provisioning
 *Data anlytics
+
+!SLIDE bullets
+
+# What's a Data Scientist?
+
+* Math
+* Egineering
+
+# What's a Data Scientist?
+
+*Big Data
+*Mining Data
+*Provisioning
+*Data anlytics
+
 
 !SLIDE
 
@@ -37,7 +52,7 @@ Divertirnos con las ultimas tecnolgias.
 # Big Data
 
 * Hadoop
-* Actors
+* Actors y Agents
 * Message Queues
 * Storm
 

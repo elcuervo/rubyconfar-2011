@@ -1,14 +1,15 @@
 !SLIDE
 
-What is big data ?
+Big Data
 
 !SLIDE
 
-Who is doing big data ?
+* What is big data ?
+* Who is doing big data ?
 
 !SLIDE
 
-Logs
+*Logs
 
 !SLIDE
 
