@@ -72,5 +72,47 @@ esos usuarios solamente.
 
 Un 
 
+El scope de la charla no es ensenar machine learning sino que es
+mostrar como se usa machine learning en el ambito practico de data
+science y luego mencionar un par de tecnicas comunes
 
-Podes hacer queries sobre data no normalizadam
+Machine learning es una rama de Inteligencia Artiicial que se
+concentra en datos empiricos , o sea datos anteriores para determinar
+comportamientos.
+
+Hay basicamente dos subramas dentro de Machine learning lo que
+llamamos supervised learning y unspervidsed.
+Supervised learnig requiere la precencia de algun experto, por ejemplo
+un humano o un grupo de humanos, que pueda clasificar una pequena parte de nuestra data de
+ante mano y decir por ejemplo este es de una clase y este es de otra.
+
+Regresion es basicamente cuando queremos predecir un valor numerico
+con respecto a un trainingdata
+
+Y lo que vamos a obtener es algo asiP
+Vamos a obtener un gran nro de puntos
+Y sobre ellos vamos a obtener una funcion lineal (cuando hablamos de
+linear regression) y sobre esa funcion lineal podemos deducir mediante
+regresion si hay un punto nuevo, cual va  a ser e valor de ese punto.
+
+
+Clasificacion es un un poco diferente aca vamos a devuelta tener un
+set de training y lo que vamos a buscar es un hiperplano clasificador
+en este caso una recta que me diga segun los datos si tengo datos
+nuevos si va a ser de una clase o no.
+
+En el caso que se plantea en el curso de Standford y si la gente que lo
+esta viendo se acordara que X1 es por ejemplo el tamno y X2 es por
+ejemplo el precio. Lo que queremos clasificar o inferir es dado un
+tamano y un precio si se vendio o no.
+
+Denuevo repetido para la gente que esta haciendo el curso de Standford
+pero hay dos tipos de algoritmos Online y Offline. Offline quiere
+decir que cada vez que agregamos un punto de training o sea que le
+ponemos una etiqueta a un punto dado , tenemos que recalcular toda
+nuesta regresion o clasificacion. Online quiere decir que podemos
+agregar un punto y nuestra inferencia va a cambiar interactivamente e
+iterativmanete.x
+
+EL ejemplo que quiero dar de clasificacion es gradient descent que es 
+basicamente n algoritmo que va 

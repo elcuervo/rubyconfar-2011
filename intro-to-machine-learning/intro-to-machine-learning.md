@@ -10,8 +10,8 @@ Supervised vs Unsupervised
 
 # Hablemos de Supervised
 
-*Regresion
-*Clasificacion
+* Regresion
+* Clasificacion
 
 !SLIDE 
 
@@ -21,21 +21,44 @@ Que es regresion ?
 
 Que es clasificacion?
 
-!SLIDE
+!SLIDE center
 
-# Un ejemplo de regresion
+## Un ejemplo de regresion
 
-!SLIDE
+![reg1](reg1.png)
 
-# Un ejemplo de clasificacion
+!SLIDE center
 
-!SLIDE
+## Un ejemplo de clasificacion
 
-# Dos tipos de algoritmos
+![clas1](clas.png)
+
+!SLIDE center
+
+## Un ejemplo de clasificacion (2)
+
+![clas2](clas2.png)
+
+!SLIDE 
+
+## Dos tipos de algoritmos
 
 *Offline
 *Online
 
-<!-- Machine learning basicas , para que se usa, donde se usa,
-regresion, clasificacion, supervised, unsupervised, batch, online,
-comparacion entre batch y online -->
+!SLIDE bullets
+
+# Gradient Descent Clasificaction
+
+* Algoritmo paso a paso
+* Convergencia
+
+!SLIDE center
+
+## Gradient Descent
+
+![clas3](clas3.png)
+
+!SLIDE
+
+# DEMO
