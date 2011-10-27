@@ -1,8 +1,6 @@
 !SLIDE center
-<!-- Intro proposito de la charla + mencion de tecnologias a mostrar
-mas adelanteo -->
 
-# Data scientist using Ruby
+# How to be a data scientist using Ruby?
 
 Federico Brubacher (@fbru02)
 Bruno Aguirre  (@elcuervocorax)
@@ -11,10 +9,10 @@ Bruno Aguirre  (@elcuervocorax)
 
 # What's a Data Scientist?
 
-*Big Data
-*Mining Data
-*Provisioning
-*Data anlytics
+* Big Data
+* Mining Data
+* Provisioning
+* Data anlytics
 
 !SLIDE bullets
 
@@ -23,12 +21,14 @@ Bruno Aguirre  (@elcuervocorax)
 * Math
 * Egineering
 
+!SLIDE bullets
+
 # What's a Data Scientist?
 
-*Big Data
-*Mining Data
-*Provisioning
-*Data anlytics
+* Big Data
+* Mining Data
+* Provisioning
+* Data anlytics
 
 
 !SLIDE

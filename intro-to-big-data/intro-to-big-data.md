@@ -1,23 +1,21 @@
-!SLIDE
+!SLIDE center
 
-Big Data
+#Big Data
 
 !SLIDE
 
 * What is big data ?
 * Who is doing big data ?
 
-!SLIDE
+!SLIDE bullets
 
-#Ejemplos de sources que buscamos
-
-*Logs
-*Datos no-normalizados
+* Logs
+* Datos no-normalizados
 
 !SLIDE
 
-*Conteos
-*Correlaciones
+* Conteos
+* Correlaciones
 
 !SLIDE
 
@@ -25,9 +23,9 @@ Big Data
 
 Batch processing
 
-!SLIDE
+!SLIDE bullets
 
-Enter HADOOP
+#Enter HADOOP
 
 !SLIDE
 
