@@ -1,0 +1,29 @@
+Fuera del viaje teorico que talvez genere el termino Data Scientist entra
+una de las partes que a mi me apasiona, poder pasar del dicho al hecho.
+
+Mi buen amigo Federico lleva tiempo contandonos acerca de hadoop, mahout,
+closure, etc, etc, etc. Honestamente les digo... pensaba que era una etapa, una
+de esas cosas con la que uno se encapricha... pero me demostro que no.
+
+Tan convencido estaba que podia demostrarme la validez y el futuro de esta rama
+de la tecnologia que me invito a dar esta charla con el.
+Asi como deben estar muchos de ustedes ahora rascandose la cabeza y
+preguntandose de que trata esto y por sobre razones y como usar este concepto,
+porque no hay que olvidar que la tecnologia es una herramienta por lo tanto hay
+muchos caminos para el mismo objetivo.
+Asi que no voy a dirigirme a ustedes como un experto en el tema, pero si como
+alguien que le dedico tiempo.
+
+HADOOP
+Como Fede les contaba Hadoop gracias a HDFS trae la particularidad de funcionar
+de forma distribuida eso en conjuncion con Map Reduce nos da la capacidad de
+dividir nuestras tareas y volver a unir los datos para tener un output tan
+uniforme como fue nuestro input.
+
+Detalle importante MapReduce es una tecnica que no tiene ninguna relacion
+directa con Hadoop, este lo que hace es facilitar como se guardan los datos y lo
+estable que sera nuestro cluster.
+
+Para muestra falta un boton como lo es bashreduce (https://github.com/erikfrey/bashreduce)
+una muy entretenida implementacion en bash script
+
