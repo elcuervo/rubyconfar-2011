@@ -47,7 +47,7 @@ refiero a tecnogias como Storm.
 Quiero empezar hablando de la vedette de todo esto que es Hadoop.
 
 Hadoop y sus experiencias con Hadoop las va a contar mas adelante
-Bruno Aguirre pero bueno queria comentarles algo de teoria basica para
+elCuervo pero bueno queria comentarles algo de teoria basica para
 ver donde estamos parados
 Hadoop ME GUSTA definirlo como su engine y su filesystem HDFS. Si bien
 el Map reduce corre sobre el filesystem HDFS en la mayoria de los
