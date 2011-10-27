@@ -27,3 +27,13 @@ estable que sera nuestro cluster.
 Para muestra falta un boton como lo es bashreduce (https://github.com/erikfrey/bashreduce)
 una muy entretenida implementacion en bash script
 
+Como ven en el bonito slide lo que tenemos es un input pequeno, mediano o inmenso
+de datos que queremos procesar y un output que nos va a proveer de la
+informacion "filtrada" como queramos.
+
+Por que se hizo tan popular hadoop en el analisis de datos... por la
+paralelizacion que es posible
+
+Wrappers en Ruby
+https://github.com/mrflip/wukong
+https://github.com/attinteractive/mrtoolkit
