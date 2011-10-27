@@ -70,11 +70,103 @@ usuarios estan mas cerca y caundo digo mass cerca digo que usuarios
 tiene mas afinidad o cosas en comun conmigo y mostrarme el feed de
 esos usuarios solamente.
 
-Un 
+Los datos que usamos los que hacemos Data Scienc son Logs y datos no
+normalizados , basicamente buscamos encontrar datos que no estan
+dentro del data model del sistema sino que escapan estos. Quizas si
+usamos luego los datos que estan en el modelo de datos y lo juntamos
+con las cosas que extraemos de los logs. Basicamente el modelo de
+datos va estar en una base relacional.
+
+Lo bueno de todo esto es como vamos a ver a continuacion con ciertos
+elementos vamos a poder hacer queries sobre hadoop en una syntaxis muy
+similar a sequel. 
+
+Lo interesante de estos datos es que son crudos, son puros en cierto
+sentido y lo que vamos a hacer es nosotros buscar como es que los
+queremos interpretar, parsear, como quieran llamarlo... siempre
+buscando ... 
+
+... corelaciones y tambien generalmente conteos. Por ejemplo una
+pregunta que nos podemos hacer si vemos el mercado inmobiliario es
+preguntarnos que tanto influye el tamano de la casa en si se vende o
+no. O el precio de la casa. O mejor hacemos una funcion que tome el
+tamano de la casa y el precio de la casa y nos diga si la casa se va a
+vender o no.
+
+A veces estas relaciones no nos sirven y solo nos sirve saber cuantos
+usuarios re-twittearon cierto tweet (ponele que estamos subscriptos al
+twitter firehose)t este es como un sub-caso del
+anterior y obviamente es mas facil.
+
+Por lo tanto lo que necesitamos es un sistema al que le podamos hacer
+estas queries y que despues de un tiempo nos responda un resultado ,
+bueno lo que necesitamos es un sistema de btch processing qen el que
+podamos hacer fire and forget... Hadoop es un sistema que hace eso.
+
+Y tambien hace muchas otras cosas como por ejemplo Map Reduce no es
+solamente que yo implemento una clase que extienda la interface MapReduceBase y
+luego defino los metodos map y reduce y listo
+
+Sino que Hadoop nos provee un paso en el medio que es super importante
+que lo va a explciar elcuervo a continuacion que se llama shuffle
+
+Dentro de shuffle pasan muchas cosas como por ejemplo de cada mapper
+se hace un fetch a los datos que este produjo, luego se copian los
+datos a las otras maquinas para que a la entrada de los reducers
+tengan todos la data completa producida por los mappers y luego se
+junta esta data y finalmente se hace el reduce
+
+Hadoop tiene un scheduler y herramientas de Serializacion
+----
+
+
+Como les comente anteriormente se puede hacer queries a la base con
+ciertos lenguajes que se llaman Pig, Hive o mi preferido Cascalog, que
+corre en Clojure
+
+En Ruby lo que he visto es que mucha gente usa templates ruby para
+modificar queries en Hive o Pig... lo cual a mi mucho no me
+atrae. Pero seria una manera de hacerlo.
+
+Clojure es un lenguaje de programacion funcional que corre en la
+JVM. Es un LISP-1 con bueno soporte higienico de macros lo que hace
+que podamos hacer metaprogramacion de manera facil y limpia.
+
+
+Cascalog se le ocurrio a un ingeniero de Twitter que vio que los
+lenguajes declarativos eran muy bueno para la programacion distribuida
+y decidio implementar sobre hadoop una interfaz declarativa ayudado
+por Hadoop para hacer programacion distribuida.
+
+Lo bueno es que en el medio de codigo Cascalog puedo poner Codigo
+Cojure, porque realmente Cascalog es un embedded DSL no un external
+DSL entonces listo puedo mezclar Cascalog con mi lenguaje de
+programacion... puedo hacer cosas que inicialmente Cascalog no estaba
+disenado para hacer...
+
+
+... Como por ejemplo algoritmos de Machine learning... 
+
+Ahora lo que si estaba disenado para hacer cascalog es hacer queries a
+set de datos gigantes por lo que eso ya viene out of the box
+
+Una query de Cascalog se ve asi :
+
+q es basicamente una query que dice sacame por stdout primer argumento
+segundo argumento las personas ... el tercer argumento es lo que se
+llama un generador que me dice que las tuplas que componen los datos
+son de la forma primero la persona y dsp la edad ... y la query
+entonces me dice decime las personas en tu data que tienen menos de 30
+
+El ejemplo de cascalog para gradient descent lo voy a mostrar dsp de
+explicar un poco de que se trata machine learning
+
+----
 
 El scope de la charla no es ensenar machine learning sino que es
 mostrar como se usa machine learning en el ambito practico de data
 science y luego mencionar un par de tecnicas comunes
+
 
 Machine learning es una rama de Inteligencia Artiicial que se
 concentra en datos empiricos , o sea datos anteriores para determinar
@@ -112,7 +204,17 @@ decir que cada vez que agregamos un punto de training o sea que le
 ponemos una etiqueta a un punto dado , tenemos que recalcular toda
 nuesta regresion o clasificacion. Online quiere decir que podemos
 agregar un punto y nuestra inferencia va a cambiar interactivamente e
-iterativmanete.x
+iterativmanete.
 
 EL ejemplo que quiero dar de clasificacion es gradient descent que es 
-basicamente n algoritmo que va 
+basicamente n algoritmo que va paso a paso mejorando la prediccion
+tomando como input los pesos de los puntos que lo rodean y moviendose
+en el camino de la menor resistencia. Este camino esta dado por la
+direccion de menor resistencia o sea el camino donde podemos minimizar
+la funcion lineal, la recta, esta funcion derivada en cada una de las
+variables o sea el gradiente. En la grafica podemos ver el primer paso 
+de una iteracion gradient desecent como podemos ver ya se va acercando
+a la recta ideal pero todavia no. El final seria como la slide
+anterior o sea esta (anterior)
+
+DEMO
