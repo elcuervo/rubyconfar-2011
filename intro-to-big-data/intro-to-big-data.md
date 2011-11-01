@@ -34,6 +34,13 @@ CAP
 
 ![cap](cap.gif)
 
+!SLIDE bullets
+
+#Jugatela
+
+* CA
+* CP
+
 !SLIDE
 
 #Procesar
