@@ -7,6 +7,15 @@ Bruno Aguirre  (@elcuervocorax)
 
 !SLIDE bullets
 
+* Introduccion
+* HDFS
+* Map Reduce
+* Hadoop en la practica
+* Ecosistema
+* Conclusiones
+
+!SLIDE bullets
+
 # What's a Data Scientist?
 
 * Big Data

@@ -1,5 +1,9 @@
 !SLIDE
 
+HDFS
+
+!SLIDE
+
 MapReduce es un modelo de programacion con una implementacion asociada para el
 procesamiento y generacion de grandes cantidades de datos. Se especifica
 una funcion de mapeo que procesa un par clave/valor y una funcion de reduccion

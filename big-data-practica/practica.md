@@ -5,6 +5,7 @@
 
 * Pig
 * Hive
+* Cascading.jruby
 * Cascalog
 
 !SLIDE
