@@ -49,16 +49,10 @@ Divertirnos con las ultimas tecnolgias.
 
 !SLIDE bullets
 
-# Big Data
+## Tecnologias que usamo en Big Data
 
 * Hadoop
+* NoSql
 * Actors y Agents
 * Message Queues
-* Storm
-
-!SLIDE bullets
-
-# Hadoop
-
-* Engine
-* HDFS
+* Real time systems

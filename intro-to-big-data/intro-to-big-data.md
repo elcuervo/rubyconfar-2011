@@ -14,28 +14,45 @@
 
 !SLIDE
 
-* Conteos
 * Correlaciones
+* Machine learning
+* Conteos
+
+!SLIDE bulelts
+
+* Guardar big data
+* Procesar Big data
+
+!SLIDE
+
+#Guardar
+
+##NoSQL
+
+!SLIDE 
+CAP
+
+![cap](cap.gif)
+
+!SLIDE
+
+#Procesar
+
+##Map-Reduce for Dummies
+
+![dummies](dummies.gif)
 
 !SLIDE
 
 #Fire and forget
 
-Batch processing
+##Batch processing
 
 !SLIDE bullets
 
-#Enter HADOOP
-
-!SLIDE
+###Enter HADOOP
 
 * Map
-* Reduce
-
-!SLIDE
-
-* Map
-* Shuffle
 * Reduce
 
 !SLIDE
@@ -48,10 +65,5 @@ Batch processing
 
 !SLIDE
 
-* Gracias a Hadoop solo tenes que hacer el
-Mapper y Reduce
-
-* Fair Scheduler
-
-!SLIDE
-
+Gracias a Hadoop solo tenes que hacer el
+Mapper y el Reducer
