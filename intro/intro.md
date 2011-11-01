@@ -49,7 +49,7 @@ Divertirnos con las ultimas tecnolgias.
 
 !SLIDE bullets
 
-## Tecnologias que usamo en Big Data
+## Tecnologias que usamos en Big Data
 
 * Hadoop
 * NoSql
