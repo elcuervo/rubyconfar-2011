@@ -11,16 +11,36 @@ que combina todas las partes.
 
 Fuente: http://labs.google.com/papers/mapreduce.html
 
-!SLIDE center
-
-![simple](simple.gif)
 
 !SLIDE center
 
-![parallel](parallel.gif)
+![simple](map-reduce-explained/1.png)
+
+!SLIDE center
+
+![simple](map-reduce-explained/2.png)
+
+!SLIDE center
+
+![simple](map-reduce-explained/3.png)
+
+!SLIDE center
+
+![simple](map-reduce-explained/4.png)
+
+!SLIDE center
+
+![simple](map-reduce-explained/5.png)
+
+!SLIDE center
+
+![simple](map-reduce-explained/6.png)
+
+!SLIDE center
+
+![simple](map-reduce-explained/7.png)
 
 !SLIDE
-
 # Que sentido tiene?
 
 !SLIDE
