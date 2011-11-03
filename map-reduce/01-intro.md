@@ -2,8 +2,6 @@
 
 # HDFS
 ## Hadoop Distrubuted File System
-.notes Bueno, ahora voy a explicar un poco como es que funciona HDFS y que es lo
-que lo hace tan especial
 
 !SLIDE center
 <!-- Una diferencia fundamental es que los bloques en HDFS no ocupan 4k como normalmente lo harian, por el contrario los bloques tienen entre 64 y 128 mb -->
@@ -38,15 +36,6 @@ que lo hace tan especial
 
 # Map / Reduce
 ## En la practica
-
-!SLIDE
-
-MapReduce es un modelo de programacion con una implementacion asociada para el
-procesamiento y generacion de grandes cantidades de datos. Se especifica
-una funcion de mapeo que procesa un par clave/valor y una funcion de reduccion
-que combina todas las partes.
-
-Fuente: http://labs.google.com/papers/mapreduce.html
 
 !SLIDE center
 
