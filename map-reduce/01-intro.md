@@ -1,6 +1,41 @@
 !SLIDE
 
-HDFS
+# HDFS
+## Hadoop Distrubuted File System
+
+!SLIDE center
+
+![simple](hdfs-explained/1.png)
+
+!SLIDE center
+
+![simple](hdfs-explained/2.png)
+
+!SLIDE center
+
+![simple](hdfs-explained/3.png)
+
+!SLIDE center
+
+![simple](hdfs-explained/4.png)
+
+!SLIDE center
+
+![simple](hdfs-explained/5.png)
+
+!SLIDE center
+
+![simple](hdfs-explained/6.png)
+
+!SLIDE center
+
+## Facebook mantiene un HDFS de 21 PetaBytes
+![datacenter](datacenter.jpg)
+
+!SLIDE
+
+# Map / Reduce
+## En la practica
 
 !SLIDE
 
@@ -10,7 +45,6 @@ una funcion de mapeo que procesa un par clave/valor y una funcion de reduccion
 que combina todas las partes.
 
 Fuente: http://labs.google.com/papers/mapreduce.html
-
 
 !SLIDE center
 
@@ -47,7 +81,3 @@ Fuente: http://labs.google.com/papers/mapreduce.html
 
 ## Procesar grandes cantidades de datos escalando horizontalmente
 
-!SLIDE center
-
-## Facebook mantiene un HDFS de 21 PetaBytes
-![datacenter](datacenter.jpg)
