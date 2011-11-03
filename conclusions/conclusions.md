@@ -33,6 +33,9 @@ hacer cosas a una escala que no se podian hacer antes.
 
 # Conclusiones
 
+!SLIDE
+
+## Conocer la tecnologia mas alla de la herramienta de turno
 
 <!--
   Deuda de Ruby con la comunidad cientifica

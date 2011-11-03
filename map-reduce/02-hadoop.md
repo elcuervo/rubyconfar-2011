@@ -110,6 +110,12 @@
 
 !SLIDE bullet incremental
 
+# Map Reduce solo en Hadoop?
+
+* https://github.com/erikfrey/bashreduce
+
+!SLIDE bullet incremental
+
 # Alternativas?
 
 * MongoDB
