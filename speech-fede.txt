@@ -21,7 +21,7 @@ Data scientist tanto de la matematica como de la ingenieria. Yo creo
 que la mayoria aca tenemos un background de ingenieria, pero de
 cualquier manera si no es asi... me gustaria charlar con gente que
 viene de las ciencias y que esta interesada en hacer este tipo de
-trabjo.
+trabjo.(poner grafico)
 
 Quiero explicar estas CUATRO categorias que tenemos ahi : BD trata de
 saber que tecnologias y herramientas hay para el procesamiento de big

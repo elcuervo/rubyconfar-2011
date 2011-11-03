@@ -4,8 +4,8 @@
 
 !SLIDE
 
-* What is big data ?
-* Who is doing big data ?
+* Que es big data?
+* Quien esta trabajando con big data?
 
 !SLIDE bullets
 
@@ -15,8 +15,8 @@
 !SLIDE
 
 * Correlaciones
-* Machine learning
 * Conteos
+* Machine learning
 
 !SLIDE bulelts
 
@@ -38,8 +38,8 @@ CAP
 
 #Jugatela
 
-* AP
-* CP
+* CP (consistency & partition tolareance)
+* AP (availability & partition tolerance)
 
 !SLIDE
 

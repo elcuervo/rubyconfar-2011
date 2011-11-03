@@ -21,7 +21,7 @@ Bruno Aguirre  (@elcuervocorax)
 * Big Data
 * Mining Data
 * Provisioning
-* Data anlytics
+* Data analytics
 
 !SLIDE bullets
 
@@ -56,7 +56,7 @@ datos.
 
 Divertirnos con las ultimas tecnolgias.
 
-!SLIDE bullets
+!SLIDE bullets incremental
 
 ## Tecnologias que usamos en Big Data
 
