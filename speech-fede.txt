@@ -1,7 +1,22 @@
+Hola! Nosotros vamos a hablar de como ser un data scientist y en
+especial como ser un datascientist en ruby.
+
+Mi nombre ... y el es ...
+
+
+Un poco la agenda para hoy es: 
+
+una introduccion donde vamos a explicar el porque esta copado ser un
+data scientist, luego vamos a explicar HDFS y M-R , finalmente vamos a
+tomar uo de los frameworks M-R q hay que se llama Hadoop y vamos a ver
+como es usar HAdoop en la practica  , vamos a hablar un poco del
+ecosistema de Hadoop y bueno luego una cocnlusion.
+
 Basicamente un DS se encarga o mejor dicho tiene que saber como
-solucionar TODAS o PARTE de estas. 
-Yo digo que es una disciplina que encompansa todas esas cosas. Hay una
-charla John Rausser de Amazon que muestra como se puede llegar a ser
+solucionar TODAS o PARTE de estas. Ahora voy a explicar un poco mas
+que siginigican.Yo digo que Data Scientist es una disciplina que encompansa todas esas cosas.
+
+ Hay una charla John Rausser de Amazon que muestra como se puede llegar a ser
 Data scientist tanto de la matematica como de la ingenieria. Yo creo
 que la mayoria aca tenemos un background de ingenieria, pero de
 cualquier manera si no es asi... me gustaria charlar con gente que
@@ -44,17 +59,8 @@ bastante bola ultimamente que es para hacer real time systems
 tencologias 
 refiero a tecnogias como Storm.
 
-Quiero empezar hablando de la vedette de todo esto que es Hadoop.
-
-Hadoop y sus experiencias con Hadoop las va a contar mas adelante
-elCuervo pero bueno queria comentarles algo de teoria basica para
-ver donde estamos parados
-Hadoop ME GUSTA definirlo como su engine y su filesystem HDFS. Si bien
-el Map reduce corre sobre el filesystem HDFS en la mayoria de los
-casos , y casi siempre toman como unidad , a mi me gusta separarlos.
-
 Quiero hacer un poco de velocidad (change of gears, creo que ya me
-estoy olvidando de como hablar en espanol)y explicar que es Big Data.
+estoy olvidando de como hablar en espanol) y explicar que es Big Data.
 
 Que es big data ?
 Bueno big data es un cachphrase una palabra clave para denominar la
@@ -87,16 +93,52 @@ queremos interpretar, parsear, como quieran llamarlo... siempre
 buscando ... 
 
 ... corelaciones y tambien generalmente conteos. Por ejemplo una
-pregunta que nos podemos hacer si vemos el mercado inmobiliario es
-preguntarnos que tanto influye el tamano de la casa en si se vende o
-no. O el precio de la casa. O mejor hacemos una funcion que tome el
-tamano de la casa y el precio de la casa y nos diga si la casa se va a
-vender o no.
+pregunta que nos podemos hacer es cuanta gente me sigue desde hace 3
+meses. Eso seria un caso de conteo. Un caso de Correlacion seria,
+seria cuanta gente me sigue dsp de q hay un twitt con un hastag
+dado. Machine learning seria un cachito mas complicado de explicar
+pero me diria basicamente una prediccion de cuantos followeres voy a
+tener si sigo twitteando al rate que estoy twitteando.
 
-A veces estas relaciones no nos sirven y solo nos sirve saber cuantos
-usuarios re-twittearon cierto tweet (ponele que estamos subscriptos al
-twitter firehose)t este es como un sub-caso del
-anterior y obviamente es mas facil.
+Bueno podemos inicialmente dividir el problema en dos etapas  , como
+guardar big data y como procer esa gran cantidad de datos. Ambas cosas
+son importantes y gracias a ellas han surgido nombres que suenan mucho
+en el ambiente informatico hoy...
+
+... como por ejemplo guardar , surgieron un monton de solociones para
+guardar datos a la que llamamos nosql en forma global. Estas
+soluciones en mi pto de vista nacieron x 2 razones basicamente : la
+primera es que es a veces el modelo relacional no es el mas obvio para
+cierto tipo de data 2) dsp de cierta cantidad de datos los datos no
+entran en un servidor y hacer sharding es un dolor de cabeza
+
+Es muy conocido el teorema que llamamos CAP que dice que dado
+Consistency, Availability y Partition Tolerance solo podemos elegir dos de
+ellas. Por otro lado es imposible tener un sistema distribuido y
+ademas que sea Partition Tolerant asique bueno :
+
+Entonces nos la tenemos que jugar: necesitamos Availability o
+necesitamos Consistency ? Consistency quiere decir dsp de una
+escritura exitosa , los reads futuros van a tener en cuenta esa
+escritura. Los sistemas que eligen consistency sobre availability
+pueden pasar que en algun momento la base no esta disponible para
+aceptar writes y como hacemos en este caso? Probamos dsp , entonces en
+este tipo de sistemas decimos que lo mejor que podemos lograr es
+eventual consistency. Availability quiere decir basicmente que el
+sistema va a estar siepre disponible para writes, pero puede pasar que
+si escribimos y dsp leemos un valor el valor que leemos no coincida
+con el que recien escribimos. Hay manera de mitigar estos efectos pero
+estos efectos siempre van a estar.
+
+Porque usamos ? M-R ?? Basicamente el problema es que hacer un sistema
+distribuido es dificil, hay q distribuir los datos, manejar los
+fallos, etc... y como una reaccion para MITIGAR esa complejidad unos
+ingenieros de google sacaron un paper que proponen usar unos idioms q
+vienen del lisp o de lenguajes funcionales que son map y
+reduce. Usando Map y Reduce podemos paralelizar en varias maquinas
+dividiendo el Dataset como va a explicar elcuervo a continuacion y que
+varias maquinas actuen como mappers y varias maquinas (las mismas o
+no) reducer.
 
 Por lo tanto lo que necesitamos es un sistema al que le podamos hacer
 estas queries y que despues de un tiempo nos responda un resultado ,
@@ -107,10 +149,7 @@ Y tambien hace muchas otras cosas como por ejemplo Map Reduce no es
 solamente que yo implemento una clase que extienda la interface MapReduceBase y
 luego defino los metodos map y reduce y listo
 
-Sino que Hadoop nos provee un paso en el medio que es super importante
-que lo va a explciar elcuervo a continuacion que se llama shuffle
-
-Dentro de shuffle pasan muchas cosas como por ejemplo de cada mapper
+Entre Map y reduce  pasan muchas cosas como por ejemplo de cada mapper
 se hace un fetch a los datos que este produjo, luego se copian los
 datos a las otras maquinas para que a la entrada de los reducers
 tengan todos la data completa producida por los mappers y luego se
@@ -128,10 +167,6 @@ En Ruby lo que he visto es que mucha gente usa templates ruby para
 modificar queries en Hive o Pig... lo cual a mi mucho no me
 atrae. Pero seria una manera de hacerlo.
 
-Clojure es un lenguaje de programacion funcional que corre en la
-JVM. Es un LISP-1 con bueno soporte higienico de macros lo que hace
-que podamos hacer metaprogramacion de manera facil y limpia.
-
 
 Cascalog se le ocurrio a un ingeniero de Twitter que vio que los
 lenguajes declarativos eran muy bueno para la programacion distribuida
@@ -143,78 +178,3 @@ Cojure, porque realmente Cascalog es un embedded DSL no un external
 DSL entonces listo puedo mezclar Cascalog con mi lenguaje de
 programacion... puedo hacer cosas que inicialmente Cascalog no estaba
 disenado para hacer...
-
-
-... Como por ejemplo algoritmos de Machine learning... 
-
-Ahora lo que si estaba disenado para hacer cascalog es hacer queries a
-set de datos gigantes por lo que eso ya viene out of the box
-
-Una query de Cascalog se ve asi :
-
-q es basicamente una query que dice sacame por stdout primer argumento
-segundo argumento las personas ... el tercer argumento es lo que se
-llama un generador que me dice que las tuplas que componen los datos
-son de la forma primero la persona y dsp la edad ... y la query
-entonces me dice decime las personas en tu data que tienen menos de 30
-
-El ejemplo de cascalog para gradient descent lo voy a mostrar dsp de
-explicar un poco de que se trata machine learning
-
-----
-
-El scope de la charla no es ensenar machine learning sino que es
-mostrar como se usa machine learning en el ambito practico de data
-science y luego mencionar un par de tecnicas comunes
-
-
-Machine learning es una rama de Inteligencia Artiicial que se
-concentra en datos empiricos , o sea datos anteriores para determinar
-comportamientos.
-
-Hay basicamente dos subramas dentro de Machine learning lo que
-llamamos supervised learning y unspervidsed.
-Supervised learnig requiere la precencia de algun experto, por ejemplo
-un humano o un grupo de humanos, que pueda clasificar una pequena parte de nuestra data de
-ante mano y decir por ejemplo este es de una clase y este es de otra.
-
-Regresion es basicamente cuando queremos predecir un valor numerico
-con respecto a un trainingdata
-
-Y lo que vamos a obtener es algo asiP
-Vamos a obtener un gran nro de puntos
-Y sobre ellos vamos a obtener una funcion lineal (cuando hablamos de
-linear regression) y sobre esa funcion lineal podemos deducir mediante
-regresion si hay un punto nuevo, cual va  a ser e valor de ese punto.
-
-
-Clasificacion es un un poco diferente aca vamos a devuelta tener un
-set de training y lo que vamos a buscar es un hiperplano clasificador
-en este caso una recta que me diga segun los datos si tengo datos
-nuevos si va a ser de una clase o no.
-
-En el caso que se plantea en el curso de Standford y si la gente que lo
-esta viendo se acordara que X1 es por ejemplo el tamno y X2 es por
-ejemplo el precio. Lo que queremos clasificar o inferir es dado un
-tamano y un precio si se vendio o no.
-
-Denuevo repetido para la gente que esta haciendo el curso de Standford
-pero hay dos tipos de algoritmos Online y Offline. Offline quiere
-decir que cada vez que agregamos un punto de training o sea que le
-ponemos una etiqueta a un punto dado , tenemos que recalcular toda
-nuesta regresion o clasificacion. Online quiere decir que podemos
-agregar un punto y nuestra inferencia va a cambiar interactivamente e
-iterativmanete.
-
-EL ejemplo que quiero dar de clasificacion es gradient descent que es 
-basicamente n algoritmo que va paso a paso mejorando la prediccion
-tomando como input los pesos de los puntos que lo rodean y moviendose
-en el camino de la menor resistencia. Este camino esta dado por la
-direccion de menor resistencia o sea el camino donde podemos minimizar
-la funcion lineal, la recta, esta funcion derivada en cada una de las
-variables o sea el gradiente. En la grafica podemos ver el primer paso 
-de una iteracion gradient desecent como podemos ver ya se va acercando
-a la recta ideal pero todavia no. El final seria como la slide
-anterior o sea esta (anterior)
-
-DEMO
