@@ -32,3 +32,11 @@ hacer cosas a una escala que no se podian hacer antes.
 !SLIDE
 
 # Conclusiones
+
+
+<!--
+  Deuda de Ruby con la comunidad cientifica
+  Un uso practico seria por ejemplo secuenciacion genetica.
+  Conocer la tecnologia mas alla de la herramienta de turno.
+  Buscar tu Weapon of Choice
+-->
