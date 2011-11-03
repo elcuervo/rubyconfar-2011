@@ -24,7 +24,7 @@ Detalle importante MapReduce es una tecnica que no tiene ninguna relacion
 directa con Hadoop, este lo que hace es facilitar como se guardan los datos y lo
 estable que sera nuestro cluster.
 
-Para muestra falta un boton como lo es bashreduce (https://github.com/erikfrey/bashreduce)
+Para muestra falta un boton como lo es bashreduce ()
 una muy entretenida implementacion en bash script
 
 Como ven en el bonito slide lo que tenemos es un input pequeno, mediano o inmenso
