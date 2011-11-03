@@ -101,6 +101,18 @@
       -input 'input/*' \
       -output output
 
+!SLIDE center
+
+![run.sh](run.png)
+
+!SLIDE center
+
+![Job tracker](tracker.png)
+
+!SLIDE center
+
+![Sample output](output.png)
+
 !SLIDE
 
 # Wrappers en ruby
