@@ -5,29 +5,48 @@
 !SLIDE
 
 # Cloudera
-## http://www.cloudera.com
+## Hadoop-based distribution
+### http://www.cloudera.com
+
+<!--
+  Vamos a suponer que tenemos instalado hadoop sin problemas.
+  No se va a explicar como instalarloo, se va del scope de la charla... y del
+  tiempo
+-->
 
 !SLIDE
 
 # Atencion
 ## Este es el ejemplo mas visto
 
-!SLIDE incremental commandline
+!SLIDE
 
-  Crea un directorio "input" en el HDFS
+# Crea un directorio "input" en el HDFS
+
+!SLIDE commandline
+
     $ hadoop fs -mkdir input
 
-!SLIDE incremental commandline
+!SLIDE
 
-  Inserta un input en el directorio
-    $ hadoop fs -put /usr/share/dict/words input/
+# Inserta un input en el directorio
 
-!SLIDE incremental commandline
+!SLIDE commandline
 
-  Lista el contenido
+    $ hadoop fs -put ~/A_Game_of_Thrones input/
+
+!SLIDE
+
+# Lista el contenido
+
+!SLIDE commandline
     $ hadoop fs -ls input
     Found 1 items
-    -rw-r--r--   /user/cloudera/input/words
+    -rw-r--r--   /user/cloudera/input/A_Game_of_Thrones
+
+!SLIDE
+
+# Ruby + Hadoop via Streaming
 
 !SLIDE
 
@@ -50,6 +69,7 @@
     ARGF.each do |line|
       line = line.chomp
       (key, value) = line.split(/\t/)
+
       if (prev_key && key != prev_key && key_total > 0)
         puts prev_key + "\t" + key_total.to_s
 
@@ -78,7 +98,7 @@
       -mapper  'ruby /home/cloudera/test/reduce.rb' \
       -file /home/cloudera/test/map.rb \
       -file /home/cloudera/test/reduce.rb \
-      -input 'input/words' \
+      -input 'input/*' \
       -output output
 
 !SLIDE
@@ -87,3 +107,14 @@
 
 * https://github.com/mrflip/wukong
 * https://github.com/attinteractive/mrtoolkit
+
+!SLIDE bullet incremental
+
+# Alternativas?
+
+* MongoDB
+      Map Reduce
+* Riak
+      Map Reduce
+      Secondary Indexes
+      Link Walking

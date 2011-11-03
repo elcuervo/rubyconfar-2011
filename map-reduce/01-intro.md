@@ -2,9 +2,11 @@
 
 # HDFS
 ## Hadoop Distrubuted File System
+.notes Bueno, ahora voy a explicar un poco como es que funciona HDFS y que es lo
+que lo hace tan especial
 
 !SLIDE center
-
+<!-- Una diferencia fundamental es que los bloques en HDFS no ocupan 4k como normalmente lo harian, por el contrario los bloques tienen entre 64 y 128 mb -->
 ![simple](hdfs-explained/1.png)
 
 !SLIDE center
