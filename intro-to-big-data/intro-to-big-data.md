@@ -29,7 +29,7 @@
 
 ##NoSQL
 
-!SLIDE 
+!SLIDE center
 CAP
 
 ![cap](cap.gif)
