@@ -1,5 +1,5 @@
 !SLIDE
-<!-- repaso de todo lo visto, 
+<!-- repaso de todo lo visto,
 como seguir ahora? que mas estudiar etc
 literatura
 conclusiones personales, preferencias personales
@@ -8,7 +8,7 @@ pregutnas -->
 De 0..1000 en 40 minutos
 
 !SLIDE
- 
+
 Being a Data Scientist is cool
 
 !SLIDE
@@ -27,12 +27,8 @@ hacer cosas a una escala que no se podian hacer antes.
 
 !SLIDE
 
-Es importante tener un buen entendimiento matematico. E igualmente
-iportante un buen entendimiento de como construir software.
+## Es importante tener un buen entendimiento matematico y  de como construir software.
 
 !SLIDE
 
-
-
-
-
+# Conclusiones
