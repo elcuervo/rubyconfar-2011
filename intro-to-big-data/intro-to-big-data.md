@@ -49,28 +49,9 @@ CAP
 
 ![dummies](dummies.gif)
 
-!SLIDE
+!SLIDE bulltes
 
-#Fire and forget
+## HADOOP
 
-##Batch processing
-
-!SLIDE bullets
-
-###Enter HADOOP
-
-* Map
-* Reduce
-
-!SLIDE
-
-* Map
-* Fetch
-* Copy
-* Merge
-* Reduce
-
-!SLIDE
-
-Gracias a Hadoop solo tenes que hacer el
-Mapper y el Reducer
+* Motor Map-Reduce
+* HDFS

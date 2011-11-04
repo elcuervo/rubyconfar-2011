@@ -140,41 +140,60 @@ dividiendo el Dataset como va a explicar elcuervo a continuacion y que
 varias maquinas actuen como mappers y varias maquinas (las mismas o
 no) reducer.
 
-Por lo tanto lo que necesitamos es un sistema al que le podamos hacer
-estas queries y que despues de un tiempo nos responda un resultado ,
-bueno lo que necesitamos es un sistema de btch processing qen el que
-podamos hacer fire and forget... Hadoop es un sistema que hace eso.
-
-Y tambien hace muchas otras cosas como por ejemplo Map Reduce no es
-solamente que yo implemento una clase que extienda la interface MapReduceBase y
-luego defino los metodos map y reduce y listo
-
-Entre Map y reduce  pasan muchas cosas como por ejemplo de cada mapper
-se hace un fetch a los datos que este produjo, luego se copian los
-datos a las otras maquinas para que a la entrada de los reducers
-tengan todos la data completa producida por los mappers y luego se
-junta esta data y finalmente se hace el reduce
-
-Hadoop tiene un scheduler y herramientas de Serializacion
+Hadoop es el sistema mas usado acutalmente para usar este paradigma de
+M-R.
+Hadoop consiste basicamente de dos partes, primero del motor o engine
+Map-Reduce que a su vez corre por encima del filesystem HDFS. Esto lo
+va a explicar mas en detalle elcuervo pero otra cosa que quiero
+mencionar antes de dejarlos con el es que Hadoop nos da mucho mas que
+una implementacion que podemos overridear de map y reduce nos da todo
+el trabajo que va por debajo de sincronizar las maquinas  , copiar los
+datos entre ellas etc.
 ----
+Queria hablar un poco de M-R en la practica, si vamos a realmente a
+trabajar sobre este paradigma . Lo primero que vamos a descubrir es
+que vamos a seguramente necesitar mas de un M-R encadenado. Por lo
+tanto una de las mejores cosas es usar un sistemas de queries que te
+arme los flujos M-R automaticamente. Hay varios Pig , Hive, que son
+creados por Yahoo, luego hay uno que anda bien en Jruby llamado
+Cascading y luego esta Cascalog que es mi favorito que usa Clojure que
+es mi lenguaje favorito junto a Ruby.
 
+Otra cosa interesante es que recumiendo no usar hadoop streaming, no
+solamente hay un penalty de perfermonace sino que es mucho mas
+incomodo de trabajar que si trabajas en un lenguaje de la jvm que
+pueda correr automaticamente queries desde tu ide o editor.
 
-Como les comente anteriormente se puede hacer queries a la base con
-ciertos lenguajes que se llaman Pig, Hive o mi preferido Cascalog, que
-corre en Clojure
+Hay varios proyectos dentro del ecosistema de Hadoo que son muy
+buenos, y recomeindo saber que son y para que sirven para no re
+inventar la rueda, seguramente los necesitemos si vamos a hacer un
+poryecto grande.
 
-En Ruby lo que he visto es que mucha gente usa templates ruby para
-modificar queries en Hive o Pig... lo cual a mi mucho no me
-atrae. Pero seria una manera de hacerlo.
+Algunos ejemplos son Zookeeper que es para orquestar un cluster. Flume
+que es para subir datos no-normalizados (logs) a un cluster. Sqoop que
+es para pasar de RDBMS a un HDFS y Oozie un sistema para crear
+workflows genericos parecido a Cascading.
 
+Dsp hay dos bases que trabajan muy bien con HDFS que implementan big
+table , por ejemplo HBase que es 100$ consistente y Cassandra que es
+100%a vailable.
 
-Cascalog se le ocurrio a un ingeniero de Twitter que vio que los
-lenguajes declarativos eran muy bueno para la programacion distribuida
-y decidio implementar sobre hadoop una interfaz declarativa ayudado
-por Hadoop para hacer programacion distribuida.
+Otra cosa importante es realmente ahcer proyectos interesantes,
+realmente recomendar Hadoop como una alternativa interesante si vas a
+hacer consultas de negocios por ejemplo a datos no normalizados. Otro
+uso interesante es Machine Learning, una buena introduccion a ML es el
+curso de standford que varios de aca se que eetamos ahciendo.
 
-Lo bueno es que en el medio de codigo Cascalog puedo poner Codigo
-Cojure, porque realmente Cascalog es un embedded DSL no un external
-DSL entonces listo puedo mezclar Cascalog con mi lenguaje de
-programacion... puedo hacer cosas que inicialmente Cascalog no estaba
-disenado para hacer...
+---
+
+Conclusion
+
+No se asusten si fuimos de 0 a 100 en 25 minuts, no tienen porqu
+entender todo pero si es interesante que se vayan con un pantallaso de
+lo que significa trabajar en big data. Y mas importante ...
+... que ser un data scientist es cool
+Hay muchos lenguajes para ser un data scientist y ruby es un buen
+lenguaje para empezar, puede ser que si avanzas un poco no sea ideal
+pero para mquetar un poco esta bueno. Y tambien es importante saber
+que Hadoop y otras herramientas nos hacen posible ir contra problemas
+quea ntes pensabamos que no se podian atacar facilmente.

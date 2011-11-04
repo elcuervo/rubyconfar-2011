@@ -5,7 +5,7 @@ literatura
 conclusiones personales, preferencias personales
 pregutnas -->
 # Repaso
-De 0..1000 en 40 minutos
+De 0..100 en aprox 25 minutos
 
 !SLIDE
 
@@ -24,22 +24,3 @@ Ruby es un muy buen lenguaje para hacer primeras experiencias
 
 Hadoop y otras herramientas hacen posible dandonos la capacidad de
 hacer cosas a una escala que no se podian hacer antes.
-
-!SLIDE
-
-## Es importante tener un buen entendimiento matematico y  de como construir software.
-
-!SLIDE
-
-# Conclusiones
-
-!SLIDE
-
-## Conocer la tecnologia mas alla de la herramienta de turno
-
-<!--
-  Deuda de Ruby con la comunidad cientifica
-  Un uso practico seria por ejemplo secuenciacion genetica.
-  Conocer la tecnologia mas alla de la herramienta de turno.
-  Buscar tu Weapon of Choice
--->
