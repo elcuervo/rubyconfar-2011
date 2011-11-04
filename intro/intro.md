@@ -26,7 +26,7 @@ Bruno Aguirre  (@elcuervocorax)
 
 # Como uno llega a ser un Data Scientist?
 
-* Metematicas
+* Matematicas
 * Ingenieria
 
 !SLIDE bullets
