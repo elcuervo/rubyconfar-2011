@@ -76,6 +76,11 @@ usuarios estan mas cerca y caundo digo mass cerca digo que usuarios
 tiene mas afinidad o cosas en comun conmigo y mostrarme el feed de
 esos usuarios solamente.
 
+LA CUESTION es que hay un porq en el negocio de Big Data que es que
+podemos obtener INTELIGENCIA de negocio que de otra manera era
+inaccesible. y esto tiene que ver...
+
+
 Los datos que usamos los que hacemos Data Scienc son Logs y datos no
 normalizados , basicamente buscamos encontrar datos que no estan
 dentro del data model del sistema sino que escapan estos. Quizas si

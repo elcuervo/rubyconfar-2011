@@ -16,28 +16,26 @@ Bruno Aguirre  (@elcuervocorax)
 
 !SLIDE bullets
 
-# What's a Data Scientist?
+# Que es ser un Data Scientist?
 
-* Big Data
-* Mining Data
+* Minar datos
+* Analisis de datos
 * Provisioning
-* Data analytics
 
 !SLIDE bullets
 
-# What's a Data Scientist?
+# Como uno llega a ser un Data Scientist?
 
-* Math
-* Egineering
+* Metematicas
+* Ingenieria
 
 !SLIDE bullets
 
-# What's a Data Scientist?
+# Que es ser un Data Scientist?
 
-* Big Data
-* Mining Data
+* Minar datos
+* Analisis de datos
 * Provisioning
-* Data anlytics
 
 
 !SLIDE
