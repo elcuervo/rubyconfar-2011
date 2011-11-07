@@ -1,3 +1,7 @@
 !SLIDE
 
-# "Conocer la tecnología mas allá de la herramienta de turno"
+# Conclusiones
+
+!SLIDE
+
+## Conocer la tecnologia mas alla de la herramienta de turno
