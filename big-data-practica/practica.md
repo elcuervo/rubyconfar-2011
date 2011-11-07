@@ -1,5 +1,5 @@
 !SLIDE
-## No usar Map-reduce sin una abstraccion por encima
+## No usar Map-reduce sin una abstracción por encima
 
 !SLIDE bullets
 

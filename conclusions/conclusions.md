@@ -9,11 +9,11 @@ De 0..100 en aprox 25 minutos
 
 !SLIDE
 
-Being a Data Scientist is cool
+Ser un Data Scientist es cool
 
 !SLIDE
 
-Hay algunos lenugajes que son mas compatibles que otros para ser un Data
+Hay algunos lenguajes que son mas compatibles que otros para ser un Data
 Scientist
 
 !SLIDE
@@ -22,5 +22,5 @@ Ruby es un muy buen lenguaje para hacer primeras experiencias
 
 !SLIDE
 
-Hadoop y otras herramientas hacen posible dandonos la capacidad de
-hacer cosas a una escala que no se podian hacer antes.
+Hadoop y otras herramientas hacen posible dándonos la capacidad de
+hacer cosas a una escala que no se podían hacer antes.

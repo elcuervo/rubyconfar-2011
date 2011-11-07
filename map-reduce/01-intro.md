@@ -35,7 +35,7 @@
 !SLIDE
 
 # Map / Reduce
-## En la practica
+## En la práctica
 
 !SLIDE center
 
@@ -66,7 +66,7 @@
 ![simple](map-reduce-explained/7.png)
 
 !SLIDE
-# Que sentido tiene?
+# Qué sentido tiene?
 
 !SLIDE
 

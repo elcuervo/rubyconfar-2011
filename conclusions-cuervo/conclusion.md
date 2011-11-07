@@ -4,4 +4,4 @@
 
 !SLIDE
 
-## Conocer la tecnologia mas alla de la herramienta de turno
+## Conocer la tecnología mas allá de la herramienta de turno

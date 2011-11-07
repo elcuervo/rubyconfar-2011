@@ -4,8 +4,8 @@
 
 !SLIDE
 
-* Que es big data?
-* Quien esta trabajando con big data?
+* Qué es big data?
+* Quién esta trabajando con big data?
 
 !SLIDE bullets
 
@@ -14,11 +14,11 @@
 
 !SLIDE
 
-* Correlaciones
 * Conteos
+* Correlaciones
 * Machine learning
 
-!SLIDE bulelts
+!SLIDE bullets
 
 * Guardar big data
 * Procesar Big data
@@ -49,7 +49,7 @@ CAP
 
 ![dummies](dummies.gif)
 
-!SLIDE bulltes
+!SLIDE bullets
 
 ## HADOOP
 

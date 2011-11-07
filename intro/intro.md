@@ -1,22 +1,22 @@
-!SLIDE center
+<!SLIDE center>
 
 # How to be a data scientist using Ruby?
 
 Federico Brubacher (@fbru02)
-Bruno Aguirre  (@elcuervocorax)
+Bruno Aguirre (@elcuervocorax)
 
 !SLIDE bullets
 
-* Introduccion
+* Introducción
 * HDFS
 * Map Reduce
-* Hadoop en la practica
+* Hadoop en la práctica
 * Ecosistema
 * Conclusiones
 
 !SLIDE bullets
 
-# Que es ser un Data Scientist?
+## Qué es ser un Data Scientist?
 
 * Minar datos
 * Analisis de datos
@@ -26,12 +26,12 @@ Bruno Aguirre  (@elcuervocorax)
 
 # Como uno llega a ser un Data Scientist?
 
-* Matematicas
-* Ingenieria
+* Matemáticas
+* Ingeniería
 
 !SLIDE bullets
 
-# Que es ser un Data Scientist?
+# Qué es ser un Data Scientist?
 
 * Minar datos
 * Analisis de datos
@@ -47,16 +47,16 @@ Hal Varian Chief Economist Google
 
 !SLIDE
 
-Proposito de la charla:
+Propósito de la charla:
 
-Explicar porque la profesion del futuro tiene que ver con entender
+Explicar porque la profesión del futuro tiene que ver con entender
 datos.
 
-Divertirnos con las ultimas tecnolgias.
+Divertirnos con las ultimas tecnolgías.
 
 !SLIDE bullets incremental
 
-## Tecnologias que usamos en Big Data
+## Tecnologías que usamos en Big Data
 
 * Hadoop
 * NoSql

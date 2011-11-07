@@ -16,7 +16,7 @@
 
 !SLIDE
 
-# Atencion
+# Atención
 ## Este es el ejemplo mas visto
 
 !SLIDE
@@ -122,7 +122,7 @@
 
 !SLIDE bullet incremental
 
-# Map Reduce solo en Hadoop?
+# Map Reduce sólo en Hadoop?
 
 * https://github.com/erikfrey/bashreduce
 
